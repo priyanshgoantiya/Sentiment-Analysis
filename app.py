@@ -4,9 +4,9 @@ import pickle
 import pandas as pd
 
 def load_model():
-    with open('/content/vectoriser-ngram-(1,2).pickle', 'rb') as file:
+    with open('model/vectoriser-ngram-(1,2).pickle', 'rb') as file:
         vectorizer = pickle.load(file)
-    with open('/content/Sentiment-LR.pickle', 'rb') as file:
+    with open('model/Sentiment-LR.pickle', 'rb') as file:
         LR = pickle.load(file)
     return vectorizer, LR
 
